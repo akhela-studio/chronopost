@@ -1,0 +1,16 @@
+{
+  "name":"akhela/chronopost",
+  "version": "0.0.1",
+  "type": "wordpress-plugin",
+  "description": "Edit product on Wordpress",
+  "license": "GPL-3.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "Chronopost\\": "src/"
+    }
+  },
+  "require": {
+    "ext-curl": "*",
+    "ext-soap": "*"
+  }
+}
