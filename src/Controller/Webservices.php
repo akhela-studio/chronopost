@@ -30,10 +30,10 @@ class Webservices
     public function get_relay_points()
     {
         $args = [
-            'shipping_method'=>sanitize_text_field($_POST['shipping_method']??'shop2shop'),
-            'zip_code'=>sanitize_text_field($_POST['zip_code']??'06100'),
-            'city'=>sanitize_text_field($_POST['city']??'Nice'),
-            'address'=>sanitize_text_field($_POST['address']??'18 avenue Gravier'),
+            'shipping_method'=>sanitize_text_field($_POST['shipping_method']??'chronorelais13'),
+            'zip_code'=>sanitize_text_field($_POST['zip_code']??''),
+            'city'=>sanitize_text_field($_POST['city']??''),
+            'address'=>sanitize_text_field($_POST['address']??''),
             'country_code'=>sanitize_text_field($_POST['country_code']??'FR')
         ];
 

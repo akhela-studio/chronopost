@@ -64,7 +64,7 @@ class Webservice
 			$maxDistanceSearch = intval($args['max_distance_search']??Options::get('max_distance_search', 1));
 			$weight = intval($args['weight']??Options::get('default_weight', 2000));
 			$holidayTolerant = boolval($args['holiday_tolerant']??1);
-            $productCode = $this->product_to_code[$args['shipping_method']]??$this->product_to_code['chronoclassic'];
+            $productCode = $this->product_to_code[$args['shipping_method']]??$this->product_to_code['chronorelais13'];
 
 			$client = new SoapClient( $RelayPointWs, [
                 'trace'              => 0,
